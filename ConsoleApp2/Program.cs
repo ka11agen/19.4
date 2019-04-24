@@ -20,7 +20,8 @@ namespace ConsoleApp2
                 string l;
                 try
                 {
-                    s = Console.ReadLine();
+                    l = Console.ReadLine();
+                    { this.name = l; }
                 }
                 catch (FormatException)
                 {
@@ -175,7 +176,7 @@ namespace ConsoleApp2
                         break;
                     case 3:
                         R[i] = new ТекстовыйРедактор();
-                        Console.WriteLine("Введите данные о корвете " + (i + 1) + " :");
+                        Console.WriteLine("Введите данные о текстовом редакторе " + (i + 1) + " :");
                         R[i].Input();
                         n[i] = 3;
                         break;
